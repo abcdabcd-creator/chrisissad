@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Chris Issad</title>
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts: Poppins pour un look moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#propos">À propos</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#competences">Compétences</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#propos">À propos</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
     <section id="accueil" class="hero">
@@ -34,15 +39,17 @@
         </section>
 
         <!-- Parcours Scolaire -->
-        <section id="parcours" style="margin-top: 5rem;">
+        <section id="parcours" class="mt-section">
             <h2 class="section-title">Mon <span>parcours scolaire</span></h2>
             <div class="timeline">
                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <h3>BTS SIO option SISR</h3>
                     <div class="timeline-date">2026 - Présent</div>
                     <p>Formation spécialisée en Solutions d’Infrastructure Systèmes et Réseaux.</p>
                 </div>
                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <h3>Baccalauréat STI2D option SIN</h3>
                     <div class="timeline-date">Obtenu en 2025</div>
                     <p>Lycée Camille Claudel - Spécialité Systèmes d'Information et Numérique.</p>
@@ -51,31 +58,31 @@
         </section>
 
         <!-- Compétences & Certifications -->
-        <section id="competences" style="margin-top: 5rem;">
+        <section id="competences" class="mt-section">
             <h2 class="section-title">Mes <span>compétences & certifications</span></h2>
             <div class="grid-container">
                 <div class="card">
-                    <i class="fas fa-network-wired"></i>
+                    <div class="icon-wrapper"><i class="fas fa-network-wired"></i></div>
                     <h3>Réseaux & Systèmes</h3>
                     <p>Simulation sur CISCO Packet Tracer, adressage IPv4. Hardware : montage, démontage et diagnostic matériel de base.</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-code"></i>
+                    <div class="icon-wrapper"><i class="fas fa-code"></i></div>
                     <h3>Développement & BDD</h3>
                     <p>Scripts et applications simples en Python, C#, HTML, CSS. Rédaction de requêtes SQL (sélection, insertion, mise à jour).</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-shield-alt"></i>
+                    <div class="icon-wrapper"><i class="fas fa-shield-alt"></i></div>
                     <h3>Cybersécurité</h3>
                     <p>Analyse des menaces, protection des données personnelles, sécurisation des bases de données et gestion des accès.</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-certificate"></i>
+                    <div class="icon-wrapper"><i class="fas fa-certificate"></i></div>
                     <h3>Certifications</h3>
                     <p><strong>Certification PIX</strong><br><strong>CISCO Packet Tracer SIO12026</strong> : Notions de base sur les réseaux</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-language"></i>
+                    <div class="icon-wrapper"><i class="fas fa-language"></i></div>
                     <h3>Langues</h3>
                     <p><strong>Anglais :</strong> Niveau B1<br><strong>Espagnol :</strong> Niveau B1</p>
                 </div>
@@ -83,13 +90,18 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" style="margin-top: 5rem;">
+        <section id="contact" class="mt-section">
             <h2 class="section-title">Me <span>contacter</span></h2>
             <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> 5 Rue des Cyclamens, 41190 Saint Lubin en Vergonnois</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:issad23.chris41@gmail.com" style="color: var(--accent-color); text-decoration: none;">issad23.chris41@gmail.com</a></p>
-                <br>
-                <p>N'hésitez pas à me contacter pour toute opportunité de stage pour la période de mai/juin 2027.</p>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>5 Rue des Cyclamens, 41190 Saint Lubin en Vergonnois</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:issad23.chris41@gmail.com">issad23.chris41@gmail.com</a></p>
+                </div>
+                <p class="contact-msg">N'hésitez pas à me contacter pour toute opportunité de stage pour la période de mai/juin 2027.</p>
             </div>
         </section>
 
@@ -97,10 +109,10 @@
 
     <footer>
         <p>&copy; 2026 Chris Issad - Portfolio</p>
-        <div style="margin-top: 10px;">
-            <a href="#">Mentions légales</a> | 
-            <a href="#">Politique de Confidentialité</a> |
-            <a href="https://github.com/chris-issad" target="_blank">GitHub</a>
+        <div class="footer-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de Confidentialité</a>
+            <a href="https://github.com/chris-issad" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </footer>
 
